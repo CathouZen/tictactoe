@@ -90,7 +90,7 @@ export const scoreGame = (board: GameBoard): GameState => {
     }
 
     if (getLegalMoves(board).length === 0) {
-        return 'X';
+        return '-';
     }
 
     return ' ';
