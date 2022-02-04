@@ -17,6 +17,9 @@ jobs:
         steps:
             - uses: actions/checkout@v2
 
+            - name: Upgrade NPM
+              run: npm install -g npm
+
             - name: Configure node
               uses: actions/setup-node@v2
               with:
